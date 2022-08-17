@@ -19,6 +19,7 @@ The util itself isn’t a big one to write, and JavaScript gives you lots of way
 - Takes two string inputs
 - Accepts a word or a sentence
 - Does not care about casing
+- Check that the two inputs have the same length
 - Rearranging the letters of a different word or phrase
 - Using all the original letters exactly once
 - Non-text characters should be reused
