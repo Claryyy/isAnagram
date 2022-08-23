@@ -20,8 +20,9 @@ The util itself isn’t a big one to write, and JavaScript gives you lots of way
 - Accepts a word or a sentence
 - Does not care about casing
 - Check that the two inputs have the same length
+- Non-text characters should be ignored
+- Check that there are the same number of letters in each input
 - Rearranging the letters of a different word or phrase
 - Using all the original letters exactly once
-- Non-text characters should be reused
 - Returns true if the two inputs are an anagram of one another
 - Returns false if the two inputs aren't an anagram of each other

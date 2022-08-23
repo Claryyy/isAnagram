@@ -14,7 +14,18 @@ function isAnagram(input1, input2) {
   input1 = input1.toLowerCase();
   input2 = input2.toLowerCase();
 
-  if (input1 === input2) {
+  const transformInput1ToArray = input1
+    .split("")
+    .sort()
+    .join("")
+    .replace(/[^a-z]/g, "");
+  const transformInput2ToArray = input2
+    .split("")
+    .sort()
+    .join("")
+    .replace(/[^a-z]/g, "");
+
+  if (transformInput1ToArray === transformInput2ToArray) {
     return true;
   } else {
     return false;
