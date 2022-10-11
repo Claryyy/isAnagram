@@ -7,10 +7,6 @@ function isAnagram(input1, input2) {
     throw new Error("isAnagram requires a second input");
   }
 
-  if (input1.length !== input2.length) {
-    return false;
-  }
-
   input1 = input1.toLowerCase();
   input2 = input2.toLowerCase();
 
@@ -24,6 +20,10 @@ function isAnagram(input1, input2) {
     .sort()
     .join("")
     .replace(/[^a-z]/g, "");
+
+  if (transformInput1ToArray.length !== transformInput2ToArray.length) {
+    return false;
+  }
 
   if (transformInput1ToArray === transformInput2ToArray) {
     return true;

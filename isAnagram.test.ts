@@ -80,7 +80,7 @@ describe("Anagram detector tests", () => {
       expect(result).toBe(expectedResult);
     });
 
-    test("can detect that inouts of two words are an anagram", () => {
+    test("can detect that inputs of two words are an anagram", () => {
       const input1 = "a gentleman";
       const input2 = "elegant man";
 
@@ -91,7 +91,7 @@ describe("Anagram detector tests", () => {
       expect(result).toBe(expectedResult);
     });
 
-    test.skip("can detect that a one word input is an anagram of a two word input", () => {
+    test("can detect that a one word input is an anagram of a two word input", () => {
       const input1 = "dormitory";
       const input2 = "dirty room";
 
